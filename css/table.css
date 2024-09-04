@@ -58,6 +58,7 @@ thead tr th {
 	word-wrap: break-word;
 	white-space: pre-wrap;
 	border-collapse: collapse;
+	border: solid 1px #000;
 }
 /* BODY */
 
