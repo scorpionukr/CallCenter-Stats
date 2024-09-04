@@ -286,6 +286,6 @@ $(document).ready(function() {
     });
 });
 </script>
-<div id='footer'><a href='//ontaxi.com.ua'>OnTaxi</a> <?php echo $yearNow; ?></div>
+<div id='footer'>&copy; <a href='//ontaxi.com.ua'><?php echo $brandName; ?></a> <?php echo $yearNow; ?></div>
 </body>
 </html>

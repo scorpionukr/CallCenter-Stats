@@ -48,6 +48,10 @@ $config['debug'] = false;
 
 $yearNow = date('Y');
 
+// Branding
+$brandName = "OnTaxi"
+$brandIcon = "/image/ontaxi_logo.ico" // path to ico image
+
 // Available languages "en", "ru"
 $language = "ru";
 

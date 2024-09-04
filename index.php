@@ -88,12 +88,13 @@ $res->free();
 
 <!DOCTYPE html>
 <head>
-	<title>OnTaxi Call Center Stats</title>
+	<title><?php echo $brandName; ?> Call Center Stats</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<style type="text/css" media="screen">@import "css/basic.css";</style>
 	<style type="text/css" media="screen">@import "css/tab.css";</style>
 	<style type="text/css" media="screen">@import "css/fixed-all.css";</style>
 	<script src="js/validmonth.js" type="text/javascript" language="javascript1.2"></script>
+	<link rel="shortcut icon" href="<?php echo $brandIcon; ?>">
 </script>
 <script type="text/javascript">
 </script>
@@ -601,5 +602,6 @@ echo "<option value=\"MWJ_UP\">" . $lang["$language"]['higher'] . "</option>\n";
 </td></tr></table>
 	</div>
 </div>
+<div id='footer'>&copy; <a href='//ontaxi.com.ua'><?php echo $brandName; ?></a> <?php echo $yearNow; ?></div>
 </body>
 </html>

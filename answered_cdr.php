@@ -71,12 +71,13 @@ function getRec($recfile, $time) {
 <!DOCTYPE html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>OnTaxi Call Center Stats</title>
+    <title><?php echo $brandName; ?> Call Center Stats</title>
       <style type="text/css" media="screen">@import "css/basic.css";</style>
       <style type="text/css" media="screen">@import "css/tab.css";</style>
       <style type="text/css" media="screen">@import "css/table.css";</style>
       <style type="text/css" media="screen">@import "css/fixed-all.css";</style>
       <link href="css/jquery.dataTables.css" rel="stylesheet">
+      <link rel="shortcut icon" href="<?php echo $brandIcon; ?>">
     <script src="js/1.10.2/jquery.min.js"></script>
     <script src="js/handlebars.js"></script>
     <script src="js/jquery.dataTables.cdr.js"></script>
@@ -273,6 +274,6 @@ print_exports($header_pdf, $data_pdf, $width_pdf, $title_pdf, $cover_pdf);
       <div class="out-placeholder"></div>
     </div>
 </div>
-<div id='footer'><a href='//ontaxi.com.ua'>OnTaxi</a> <?php echo $yearNow; ?></div>
+<div id='footer'>&copy; <a href='//ontaxi.com.ua'><?php echo $brandName; ?></a> <?php echo $yearNow; ?></div>
 </body>
 </html>

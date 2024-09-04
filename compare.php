@@ -183,11 +183,12 @@ $connection->close();
 <!DOCTYPE html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>OnTaxi Call Center Stats</title>
+    <title><?php echo $brandName; ?> Call Center Stats</title>
       <style type="text/css" media="screen">@import "css/basic.css";</style>
       <style type="text/css" media="screen">@import "css/tab.css";</style>
       <style type="text/css" media="screen">@import "css/table.css";</style>
       <style type="text/css" media="screen">@import "css/fixed-all.css";</style>
+      <link rel="shortcut icon" href="<?php echo $brandIcon; ?>">
     <script type="text/javascript" src="js/1.10.2/jquery.min.js"></script>
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
@@ -266,6 +267,6 @@ $connection->close();
     </div>
 </div>
 
-<div id='footer'><a href='//ontaxi.com.ua'>OnTaxi</a> <?php echo $yearNow; ?></div>
+<div id='footer'>&copy; <a href='//ontaxi.com.ua'><?php echo $brandName; ?></a> <?php echo $yearNow; ?></div>
 </body>
 </html>
