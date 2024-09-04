@@ -266,6 +266,6 @@ $connection->close();
     </div>
 </div>
 
-<div id='footer'><a href='//ontaxi.com.ua'>OnTaxi</a> <?php ('Y')?></div>
+<div id='footer'><a href='//ontaxi.com.ua'>OnTaxi</a> <?php echo $yearNow; ?></div>
 </body>
 </html>

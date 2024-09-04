@@ -46,6 +46,7 @@ $config['authtype'] = 'plaintext';
 $config['cookiefile'] = null;
 $config['debug'] = false;
 
+$yearNow = date('Y');
 
 // Available languages "en", "ru"
 $language = "ru";

@@ -220,6 +220,6 @@ print_exports($header_pdf,$data_pdf,$width_pdf,$title_pdf,$cover_pdf);
 </div>
 </div>
 </div>
-<div id='footer'><a href='//ontaxi.com.ua'>OnTaxi</a> <?php ('Y')?></div>
+<div id='footer'><a href='//ontaxi.com.ua'>OnTaxi</a> <?php echo $yearNow; ?></div>
 </body>
 </html>

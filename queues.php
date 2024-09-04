@@ -411,7 +411,7 @@ Handlebars.registerHelper('l10n', function(keyword) {
         <br/>
     </div>
     </div>
-    <div id='footer'><a href='//ontaxi.com.ua'>OnTaxi</a> <?php ('Y')?></div>
+    <div id='footer'><a href='//ontaxi.com.ua'>OnTaxi</a> <?php echo $yearNow; ?></div>
 </body>
 
 </html>
