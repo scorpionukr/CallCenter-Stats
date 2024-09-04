@@ -193,6 +193,7 @@ tooltip($lang["$language"]['gotop'], 200);
 $header_pdf = array($lang["$language"]['agent'], $lang["$language"]['Calls'], $lang["$language"]['percent'], $lang["$language"]['calltime'], $lang["$language"]['percent'], $lang["$language"]['avg'], $lang["$language"]['holdtime'], $lang["$language"]['avg']);
 $width_pdf = array(64, 32, 32, 32, 32,32, 32, 32);
 $title_pdf = $lang["$language"]['answered_calls_by_agent'];
+$header_csv = array();
 
 $contador = 0;
 $query1 = "";
@@ -247,7 +248,7 @@ if ($total_calls2 > 0) {
             </TBODY>
         </TABLE>
             <?php if ($total_calls2 > 0) {
-	print_exports($header_pdf, $data_pdf, $width_pdf, $title_pdf, $cover_pdf);
+	print_exports($header_pdf, $data_pdf, $width_pdf, $title_pdf, $cover_pdf, $header_csv);
 }
 ?>
 

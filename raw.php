@@ -172,7 +172,8 @@ mysqli_close($connection);
 $header_pdf=array($lang["$language"]['time'],$lang["$language"]['id'], $lang["$language"]['queue'],$lang["$language"]['agent'],$lang["$language"]['event'],"data1","data2","data3");
 $width_pdf=array(25,23,23,23,23,25,25,20);
 $title_pdf=$lang["$language"]['user_abandon_calls'];
-$data_pdf = array();				
+$data_pdf = array();
+$header_csv = array();				
 foreach($result as $row) {
 if ($row['record_file'] == '0') {
     $row['record_file'] = $lang["$language"]['norecords'];
@@ -210,12 +211,12 @@ if ($row['record_file'] == '0') {
 
 	} 	
 $result->free();
-print_exports($header_pdf,$data_pdf,$width_pdf,$title_pdf,$cover_pdf);
+print_exports($header_pdf,$data_pdf,$width_pdf,$title_pdf,$cover_pdf, $header_csv);
                 ?>
 			   </TBODY>
 			  </TABLE>
 <?php
-print_exports($header_pdf,$data_pdf,$width_pdf,$title_pdf,$cover_pdf);
+print_exports($header_pdf,$data_pdf,$width_pdf,$title_pdf,$cover_pdf, $header_csv);
 ?>			  
 			  </BR>
 </div>

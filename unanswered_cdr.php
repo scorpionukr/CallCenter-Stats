@@ -136,6 +136,7 @@ $header_pdf=array($lang["$language"]['time'],$lang["$language"]['callerid'], $la
 $width_pdf=array(40,32,23,23,23,25,25);
 $title_pdf=$lang["$language"]['user_abandon_calls'];
 $data_pdf = array();
+$header_csv = array();
 
 foreach($resabandon as $row) {
 if($row['event'] == "ENTERQUEUE") {
@@ -167,13 +168,13 @@ if  (($row['event'] !== "ENTERQUEUE") ) {
 mysqli_free_result($resabandon); 
  
 echo "<br />Всего найдено:".$page_rows2."<br />";
-print_exports($header_pdf,$data_pdf,$width_pdf,$title_pdf,$cover_pdf);
+print_exports($header_pdf,$data_pdf,$width_pdf,$title_pdf,$cover_pdf, $header_csv);
  
 echo "</table>";
 
  ?>
 <?php 
-print_exports($header_pdf,$data_pdf,$width_pdf,$title_pdf,$cover_pdf);
+print_exports($header_pdf,$data_pdf,$width_pdf,$title_pdf,$cover_pdf, $header_csv);
 ?>
 	  <br/>	
      </div>

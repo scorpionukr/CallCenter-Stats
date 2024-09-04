@@ -42,6 +42,7 @@ $header_pdf = array("Дата", "CallerId", "DID", "Очередь", "Агент
 $width_pdf = array(40, 32, 25, 25, 64, 25, 25);
 $title_pdf = "Принятые вызовы";
 $data_pdf = array();
+$header_csv = array();
 foreach ($out as $k => $r) {
 	$time = strtotime($r['time']);
 	$time = date('Y-m-d H:i:s', $time);
@@ -267,7 +268,7 @@ Handlebars.registerHelper("getStatus", function (s) {
       <h2>Детализация</h2>
       <br/>
 <?php
-print_exports($header_pdf, $data_pdf, $width_pdf, $title_pdf, $cover_pdf);
+print_exports($header_pdf, $data_pdf, $width_pdf, $title_pdf, $cover_pdf, $header_csv);
 ?>
         <br/>
         <hr/>

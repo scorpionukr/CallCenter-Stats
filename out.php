@@ -40,6 +40,7 @@ $header_pdf = array("Дата", "Агент", "Номер", "Назнач.", "П
 $width_pdf = array(25, 25, 25, 25, 25);
 $title_pdf = "Исходящие вызовы";
 $data_pdf = array();
+$header_csv = array();
 foreach ($out as $k => $r) {
 	$time = strtotime($r['time']);
 	$time = date('Y-m-d H:i:s', $time);
@@ -284,7 +285,7 @@ Handlebars.registerHelper("getStatus", function (s) {
         </form>
         </div>
 <?php
-print_exports($header_pdf, $data_pdf, $width_pdf, $title_pdf, $cover_pdf);
+print_exports($header_pdf, $data_pdf, $width_pdf, $title_pdf, $cover_pdf, $header_csv);
 ?>
         <br/>
         <hr/>
