@@ -119,6 +119,7 @@ $cover_pdf .= $lang["$language"]['period'] . ": " . $period . " " . $lang["$lang
            <h3> <?php echo $lang["$language"]['user_abandon_calls']?></h3>
 <br />		   
 		   <table width='90%' cellpadding=1 cellspacing=1 border=0 class='sortable' id='user_abandon_calls' >
+            <THEAD>
         <TR> 
 			<TH><?php echo $lang["$language"]['time']?></TH>
 			<TH><?php echo $lang["$language"]['callerid']?></TH>
@@ -129,6 +130,7 @@ $cover_pdf .= $lang["$language"]['period'] . ": " . $period . " " . $lang["$lang
 			<TH><?php echo $lang["$language"]['hangupposition']?></TH>
 			<TH><?php echo $lang["$language"]['callid']?></TH>
        </TR>
+        </THEAD>
 <?php
 $header_pdf=array($lang["$language"]['time'],$lang["$language"]['callerid'], $lang["$language"]['queue'],$lang["$language"]['event'],$lang["$language"]['holdtime'],$lang["$language"]['enterposition'],$lang["$language"]['hangupposition']);
 $width_pdf=array(40,32,23,23,23,25,25);
