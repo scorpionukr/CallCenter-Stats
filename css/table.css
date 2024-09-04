@@ -36,7 +36,7 @@ caption {
 	font-family: open sans,roboto,sans-serif;
 	font-size: 140%;
 	font-weight: bold;
-	color: #000;
+	color: #1c5d79;
 	text-align: left;
 	letter-spacing: 1px;
 	border-top: none;
@@ -47,13 +47,13 @@ caption {
 /* HEAD */
 
 thead {
-	background-color: #fff;
+	background-color: #fffdf3;
 	border: none;
 }
 thead tr th {
 	height: 32px;
 	background: #def;
-	color: white;
+	color: #1c5d79;
 	text-align: center;
 	word-wrap: break-word;
 	white-space: pre-wrap;
@@ -68,7 +68,7 @@ tbody tr {
 	border: 1px solid black;
 }
 tbody tr.odd {
-	background: #ddd;
+	background: #dfedf3;
 }
 tbody tr:hover  {background-color: #ddd;}
 
