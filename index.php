@@ -1,6 +1,6 @@
 <?php
 /*
-Copyright 2017, https://asterisk-pbx.ru
+Copyright 2024, https://ontaxi.com.ua
 
 This file is part of Asterisk Call Center Stats.
 Asterisk Call Center Stats is free software: you can redistribute it
@@ -88,7 +88,7 @@ $res->free();
 
 <!DOCTYPE html>
 <head>
-	<title>Asternic Call Center Stats</title>
+	<title>OnTaxi Call Center Stats</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<style type="text/css" media="screen">@import "css/basic.css";</style>
 	<style type="text/css" media="screen">@import "css/tab.css";</style>

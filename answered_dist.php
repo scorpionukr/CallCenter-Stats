@@ -23,7 +23,7 @@ include("sesvars.php");
 <!DOCTYPE html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Asterisk Call Center Stats</title>
+    <title>OnTaxi Call Center Stats</title>
     <style type="text/css" media="screen">@import "css/basic.css";</style>
     <style type="text/css" media="screen">@import "css/tab.css";</style>
     <style type="text/css" media="screen">@import "css/table.css";</style>
@@ -338,6 +338,6 @@ echo "['".$action."', ".$num."],['".$action2."', ".$num2."]\n";
 		  
 </div>
 </div>
-<div id='footer'><a href='https://asterisk-pbx.ru'>Asterisk-pbx.ru</a> 2017</div>
+<div id='footer'><a href='//ontaxi.com.ua'>OnTaxi</a> <?php ('Y')?></div>
 </body>
 </html>

@@ -325,6 +325,6 @@ $(document).ready(function() {
     });
 });
 </script>
-<div id='footer'><a href='https://asterisk-pbx.ru'>Asterisk-pbx.ru</a> 2018</div>
+<div id='footer'><a href='//ontaxi.com.ua'>OnTaxi</a> <?php ('Y')?></div>
 </body>
 </html>
