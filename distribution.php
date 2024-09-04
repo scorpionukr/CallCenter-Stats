@@ -261,6 +261,7 @@ tooltip($lang["$language"]['gotop'], 200);
 $header_pdf = array($lang["$language"]['date'], $lang["$language"]['enterqueue'], $lang["$language"]['answered'], $lang["$language"]['unanswered'], $lang["$language"]['percent_unanswered_this'], $lang["$language"]['avg_calltime'], $lang["$language"]['avg_holdtime'], $lang["$language"]['alogin']);
 $width_pdf = array(25, 23, 23, 23, 23, 25, 25, 20);
 $title_pdf = $lang["$language"]['call_distrib_day'];
+$header_csv = array();
 
 $count = 1;
 foreach ($dias as $key) {
@@ -331,7 +332,7 @@ foreach ($dias as $key) {
 
 			<?php
 if ($count > 1) {
-	print_exports($header_pdf, $data_pdf, $width_pdf, $title_pdf, $cover_pdf);
+	print_exports($header_pdf, $data_pdf, $width_pdf, $title_pdf, $cover_pdf, $header_csv);
 }
 ?>
 			<BR>
@@ -367,6 +368,7 @@ $header_pdf = array($lang["$language"]['hour'], $lang["$language"]['enterqueue']
 $width_pdf = array(25, 23, 23, 23, 23, 25, 25, 20, 20);
 $title_pdf = $lang["$language"]['call_distrib_hour'];
 $data_pdf = array();
+$header_csv = array();
 
 $query_ans = "";
 $query_unans = "";
@@ -434,7 +436,7 @@ for ($key = 0; $key < 24; $key++) {
 			</TBODY>
 			</TABLE>
 			<?php
-print_exports($header_pdf, $data_pdf, $width_pdf, $title_pdf, $cover_pdf);
+print_exports($header_pdf, $data_pdf, $width_pdf, $title_pdf, $cover_pdf, $header_csv);
 ?>
 
 			<BR>
@@ -468,6 +470,7 @@ $header_pdf = array($lang["$language"]['day'], $lang["$language"]['enterqueue'],
 $width_pdf = array(25, 23, 23, 23, 23, 25, 25, 20, 20);
 $title_pdf = $lang["$language"]['call_distrib_week'];
 $data_pdf = array();
+$header_csv = array();
 
 $query_ans = "";
 $query_unans = "";
@@ -535,7 +538,7 @@ for ($key = 0; $key < 7; $key++) {
 			</TBODY>
 			</TABLE>
 			<?php
-print_exports($header_pdf, $data_pdf, $width_pdf, $title_pdf, $cover_pdf);
+print_exports($header_pdf, $data_pdf, $width_pdf, $title_pdf, $cover_pdf, $header_csv);
 ?>
 			<BR>
 
@@ -574,6 +577,7 @@ $header_pdf = array($lang["$language"]['month'], $lang["$language"]['enterqueue'
 $width_pdf = array(25, 23, 23, 23, 23, 25, 25, 20, 20);
 $title_pdf = $lang["$language"]['call_distrib_month'];
 $data_pdf = array();
+$header_csv = array();
 
 for ($key = 1; $key <= 12; $key++) {
 	$cual = ($key + 1) % 2;
@@ -636,7 +640,7 @@ for ($key = 1; $key <= 12; $key++) {
 			</TBODY>
 			</TABLE>
 			<?php
-print_exports($header_pdf, $data_pdf, $width_pdf, $title_pdf, $cover_pdf);
+print_exports($header_pdf, $data_pdf, $width_pdf, $title_pdf, $cover_pdf, $header_csv);
 ?>
 			<BR>
 </div>
