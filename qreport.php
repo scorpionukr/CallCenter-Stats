@@ -80,6 +80,7 @@ $header_pdf = array("Дата","Час","0","1","2","3","4","5","6","7","8","9",
 $width_pdf = array(22,64,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8);
 $title_pdf = "Отчет по очереди за период $start - $end";
 $data_pdf = array();
+$header_csv = array();
 
 foreach ($queues as $key => $val) {
   for ($i=0; $i <= 23 ; $i++) { 
@@ -240,7 +241,7 @@ $queues = json_encode($queues);
       <br/>
         <div style="float: left;">
               <?php
-               print_exports($header_pdf, $data_pdf, $width_pdf, $title_pdf, $cover_pdf);
+               print_exports($header_pdf, $data_pdf, $width_pdf, $title_pdf, $cover_pdf, $header_csv);
               ?>
         </div>
         <div style="float: right;">
