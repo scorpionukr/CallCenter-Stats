@@ -161,7 +161,7 @@ $end_parts   = explode(" ,:", $end);
 		</CAPTION>
 			<THEAD>
 			<TR>
-			<TD valign=top width='50%' bgcolor='#ffffff'>
+			<TD valign=top width='50%' bgcolor='#fffdf3'>
 				<TABLE width='99%' cellpadding=1 cellspacing=1 border=0>
 				<THEAD>
 				<TR>
@@ -204,7 +204,7 @@ $end_parts   = explode(" ,:", $end);
 				</TBODY>
 			  </TABLE>
 			</TD>
-			<TD align=center bgcolor='#ffffff'>
+			<TD align=center bgcolor='#fffdf3'>
 	<script type="text/javascript">
       google.charts.load('current', {'packages':['corechart']});
       google.charts.setOnLoadCallback(drawChart);
@@ -243,7 +243,7 @@ $end_parts   = explode(" ,:", $end);
 			</CAPTION>
 			<THEAD>
 			<TR>
-			<TD valign=top width='50%' bgcolor='#ffffff'>
+			<TD valign=top width='50%' bgcolor='#fffdf3'>
 				<TABLE width='99%' cellpadding=1 cellspacing=1 border=0>
 				<THEAD>
                 <TR> 
@@ -266,7 +266,7 @@ $end_parts   = explode(" ,:", $end);
 			  </TBODY>
 			  </TABLE>
 			</TD>
-			<TD valign=top width="50%" align=center bgcolor='#ffffff'>
+			<TD valign=top width="50%" align=center bgcolor='#fffdf3'>
 <script type="text/javascript">
       google.charts.load('current', {'packages':['corechart']});
       google.charts.setOnLoadCallback(drawChart);
@@ -305,7 +305,7 @@ $end_parts   = explode(" ,:", $end);
 			<THEAD>
 			<TR>
 
-	        <TD valign=top width="50%" align=center bgcolor='#ffffff'>
+	        <TD valign=top width="50%" align=center bgcolor='#fffdf3'>
 			    <TABLE width='99%' cellpadding=1 cellspacing=1 border=0>
 				<THEAD>
                 <TR> 
@@ -352,7 +352,7 @@ echo "<TR><TD><b>".$lang["$language"]['ALLS']."<br/>".$total_abandon_calls."</b>
 </TBODY>
 </TABLE>
 </TD>
-<TD valign=top width="50%" align=center bgcolor='#ffffff'>
+<TD valign=top width="50%" align=center bgcolor='#fffdf3'>
 <script type="text/javascript">
 google.charts.load('current', {packages: ['corechart', 'line']});
     google.charts.setOnLoadCallback(drawBasic);
