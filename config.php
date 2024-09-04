@@ -1,8 +1,8 @@
 <?php
 require_once "misc.php";
 
-$DBServer = 'localhost';
-$DBUser = 'freepbxuser';
+$DBServer = 'ontaxivoipmysql1.mysql.database.azure.com';
+$DBUser = 'ontaxi';
 $DBPass = '';
 $DBName = 'asteriskcdrdb';
 $DBTable = 'queuelog';
@@ -17,30 +17,30 @@ if ($connection->connect_error) {
 	trigger_error('Database connection failed: ' . $connection->connect_error, E_USER_ERROR);
 }
 
-$confpbx = new mysqli('localhost', 'freepbxuser', '', 'asterisk');
+$confpbx = new mysqli($DBServer, $DBUser, $DBPass, 'asterisk');
 $confpbx->set_charset('utf8');
 
 
-//$user = $_SERVER['PHP_AUTH_USER'];
-//$pass = $_SERVER['PHP_AUTH_PW'];
+$user = $_SERVER['PHP_AUTH_USER'];
+$pass = $_SERVER['PHP_AUTH_PW'];
 
-//$valid_passwords2 = $confpbx->query("SELECT password_sha1 FROM ampusers WHERE username = '$user'");
-//$valid_passwords = $valid_passwords2->fetch_row();
+$valid_passwords2 = $confpbx->query("SELECT password_sha1 FROM ampusers WHERE username = '$user'");
+$valid_passwords = $valid_passwords2->fetch_row();
 
-//$validated = (sha1($pass) == $valid_passwords[0]);
+$validated = (sha1($pass) == $valid_passwords[0]);
 
-//if (!$validated) {
-//	header('WWW-Authenticate: Basic realm="fs-tst"');
-//	header('HTTP/1.0 401 Unauthorized');
-//	die("Not authorized");
-//}
+if (!$validated) {
+	header('WWW-Authenticate: Basic realm="fs-tst"');
+	header('HTTP/1.0 401 Unauthorized');
+	die("Not authorized");
+}
 
-//$valid_passwords2->free();
+$valid_passwords2->free();
 
 //AJAM for realtime. For use: webenable=yes; mini-http enable; 
 
-$config['urlraw'] = 'http://127.0.0.1:8088/asterisk/rawman';
-$config['admin'] = 'admin';
+$config['urlraw'] = 'http://172.16.0.7:8088/rawman';
+$config['admin'] = 'ajamuser';
 $config['secret'] = '';
 $config['authtype'] = 'plaintext';
 $config['cookiefile'] = null;
