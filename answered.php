@@ -254,7 +254,7 @@ if ($total_calls2 > 0) {
 <TABLE width='99%' cellpadding=3 cellspacing=3 border=0>
 <THEAD>
 <TR>
-<TD align=center bgcolor='#ffffff' width='50%'>
+<TD align=center bgcolor='#fffdf3' width='50%'>
  <script type="text/javascript">
     google.charts.load("current", {packages:['corechart']});
     google.charts.setOnLoadCallback(drawChart);
@@ -289,7 +289,7 @@ foreach ($total_time2 as $key => $val) {
 
     <div id="dur_by_agent"></div>
 </TD>
-<TD align=center bgcolor='#ffffff' width='50%'>
+<TD align=center bgcolor='#fffdf3' width='50%'>
 <script type="text/javascript">
     google.charts.load("current", {packages:['corechart']});
     google.charts.setOnLoadCallback(drawChart);
@@ -337,7 +337,7 @@ tooltip($lang["$language"]['gotop'], 200);
             <thead>
             <tr>
 
-                <td valign=top width="50%" align=center  bgcolor='#ffffff'>
+                <td valign=top width="50%" align=center  bgcolor='#fffdf3'>
 				 <table width='99%' cellpadding=1 cellspacing=1 border=0 class='sortable' id='tableresp'>
 				<thead>
                 <tr>
@@ -377,7 +377,7 @@ foreach ($hold as $key => $row) {
 			   </tbody>
 			  </table>
 			</td>
-			 <td valign=top width='50%' bgcolor='#ffffff'>
+			 <td valign=top width='50%' bgcolor='#fffdf3'>
 
 <script type="text/javascript">
 google.charts.load('current', {packages: ['corechart', 'line']});
@@ -423,7 +423,7 @@ tooltip($lang["$language"]['gotop'], 200);
             <thead>
             <tr>
 
-                <td valign=top width="50%" align=center  bgcolor='#ffffff'>
+                <td valign=top width="50%" align=center  bgcolor='#fffdf3'>
 				<table width='99%' cellpadding=1 cellspacing=1 border=0 class='sortable' id='tabledurper'>
 				 <thead>
                   <tr>
@@ -460,7 +460,7 @@ foreach ($durall as $key => $row) {
 			  </tbody>
 			 </table>
 			</td>
-			<td valign=top width='50%' bgcolor='#ffffff'>
+			<td valign=top width='50%' bgcolor='#fffdf3'>
 <script type="text/javascript">
 google.charts.load('current', {packages: ['corechart', 'line']});
     google.charts.setOnLoadCallback(drawBasic);
@@ -505,7 +505,7 @@ tooltip($lang["$language"]['gotop'], 200);
             <?php echo $lang["$language"]['disconnect_cause'] ?></caption>
               </table>
               <br/>
-            <td align=center  bgcolor='#ffffff'>
+            <td align=center  bgcolor='#fffdf3'>
 	<script type="text/javascript">
 	  var hangcause = <?php echo json_encode($lang["$language"]['disconnect_cause']); ?>;
       google.charts.load('current', {'packages':['corechart']});

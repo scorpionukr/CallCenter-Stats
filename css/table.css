@@ -136,7 +136,7 @@ tfoot tr td {
 table.sortable a.sortheader {
     text-decoration: none;
     display: block;
-	color: #fff;
+	color: #1c5d79;
 }
 table.sortable span.sortarrow {
     color: black;
