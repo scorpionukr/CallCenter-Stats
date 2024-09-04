@@ -1,13 +1,13 @@
 #main {
 	border: 1px solid #666;
 	clear: both;
-	background: #ffffff;
+	background: #fffdf3;
 	padding-top: 2em;
 }
 
 #contents {
 	padding: 1.5em;
-	background: #ffffff;
+	background: #fffdf3;
 	min-height: 300px;
 }
 
