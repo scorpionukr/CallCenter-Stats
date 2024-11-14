@@ -51,6 +51,7 @@ $yearNow = date('Y');
 // Branding
 $brandName = "OnTaxi";
 $brandIcon = "/images/ontaxi_logo.ico"; // path to ico image
+$brandDomain = "ontaxi.com.ua";
 
 // Available languages "en", "ru"
 $language = "ru";

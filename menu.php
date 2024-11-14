@@ -52,7 +52,7 @@ $link[] = "dids.php";
 //$link[] = "compare.php";
 
 $link[] = "search.php";
-$link[] = "queues.php";
+$link[] = "agents.php";
 
 $anchor = Array();
 

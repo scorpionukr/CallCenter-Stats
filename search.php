@@ -231,6 +231,6 @@ print_exports($header_pdf,$data_pdf,$width_pdf,$title_pdf,$cover_pdf, $header_cs
 </div>
 </div>
 </div>
-<div id='footer'>&copy; <a href='//ontaxi.com.ua'><?php echo $brandName; ?></a> <?php echo $yearNow; ?></div>
+<div id='footer'>&copy; <a href='//<?php echo $brandDomain; ?>'><?php echo $brandName; ?></a> <?php echo $yearNow; ?></div>
 </body>
 </html>
