@@ -61,7 +61,7 @@ callcounter => yes
 ```
 ### Install CallCenter-Stats  
 Create new site in Apache2 or add new directory in `/var/www/html`  
-Clone git reposytory to new site  
+Clone git repository to new site  
 ```
 git clone https://github.com/scorpionukr/CallCenter-Stats.git
 ```
