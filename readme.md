@@ -109,5 +109,5 @@ Go to FreePBX -> Settings -> Advanced Settings
 Enable mini-HTTP Server  
 Test AJAM
 ```
-asterisk -rx 'http  show status'
+asterisk -rx 'http show status'
 ```
