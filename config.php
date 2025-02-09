@@ -1,8 +1,8 @@
 <?php
 require_once "misc.php";
 
-$DBServer = 'ontaxivoipmysql1.mysql.database.azure.com';
-$DBUser = 'ontaxi';
+$DBServer = 'your_mysql_server';
+$DBUser = 'user';
 $DBPass = '';
 $DBName = 'asteriskcdrdb';
 $DBTable = 'queuelog';
@@ -39,7 +39,7 @@ $valid_passwords2->free();
 
 //AJAM for realtime. For use: webenable=yes; mini-http enable; 
 
-$config['urlraw'] = 'http://172.16.0.7:8088/rawman';
+$config['urlraw'] = 'http://IP_PBX:8088/rawman';
 $config['admin'] = 'ajamuser';
 $config['secret'] = '';
 $config['authtype'] = 'plaintext';
@@ -49,9 +49,9 @@ $config['debug'] = false;
 $yearNow = date('Y');
 
 // Branding
-$brandName = "OnTaxi";
-$brandIcon = "/images/ontaxi_logo.ico"; // path to ico image
-$brandDomain = "ontaxi.com.ua";
+$brandName = "Your Company Name"; // brand name
+$brandIcon = "/images/your_company.ico"; // path to ico image
+$brandDomain = "your_site.com"; // domain name
 
 // Available languages "en", "ru"
 $language = "ru";
