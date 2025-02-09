@@ -107,7 +107,7 @@ write = system,agent,reporting
 ```
 Go to FreePBX -> Settings -> Advanced Settings  
 Enable mini-HTTP Server  
-Test AAJAM
+Test AJAM
 ```
 asterisk -rx 'http  show status'
 ```
